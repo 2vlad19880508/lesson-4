@@ -11,11 +11,10 @@ $array = array(
 	'a9' => array('id'=>'9', 'age'=>'20', 'gender'=>'g', 'login'=>'Даша'), 
 	);
 	
-$age  = array_column($array, 'age');
-$gender = array_column($array, 'gender');
+$age  = array_column($array, 'age'); // Сортируем данные по age 
+$gender = array_column($array, 'gender'); // Сортируем gender по убыванию
 
-// Сортируем данные по age по возрастанию и по gender по убыванию
-// сортировка по общему ключу
+// сортировка по общему ключу (age - спрева сортируется, gender - второй ключ, сортируется после age)
 array_multisort($age, SORT_ASC, $gender, SORT_DESC, $array);
 
 print_r ($array);
