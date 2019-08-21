@@ -13,3 +13,13 @@ $g = range(150,90,3);
 $z = array_combine($d, $g);
 asort($z);
 print_r($z);
+
+// еще можно без сортировки так 
+
+/*
+$d = range(150, 90,3); // массив с 90 до 150 и шаг - 3
+$g = range(90,150,3);
+
+$z = array_combine($d, $g);
+print_r($z);
+*/
