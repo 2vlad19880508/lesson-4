@@ -3,18 +3,18 @@ $array = [
 	"ru"  =>  [ "понедельник",
                      "вторник",
                      "среда",
-					 "четверг", 
-					 "пятница", 
-					 "суббота", 
-					 "воскресение"
+		     "четверг", 
+		     "пятница", 
+                     "суббота", 
+		     "воскресение"
                     ],
     "en"  =>  [ "monday", 
-				     "tuesday", 
-				     "wednesday", 
-				     "thursday", 
-				     "friday", 
-				     "saturday", 
-				     "sunday"
+		"tuesday", 
+		"wednesday", 
+		"thursday", 
+		"friday", 
+		"saturday", 
+		"sunday"
                    ]
                 
                 ];
