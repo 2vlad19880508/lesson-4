@@ -1,27 +1,25 @@
 <?php 
 $array = [ 
 	"ru"  =>  [ "понедельник",
-                     "вторник",
-                     "среда",
-		     "четверг", 
-		     "пятница", 
-                     "суббота", 
-		     "воскресение"
+                "вторник",
+                "среда",
+		        "четверг", 
+		        "пятница", 
+                "суббота", 
+		        "воскресение"
                     ],
     "en"  =>  [ "monday", 
-		"tuesday", 
-		"wednesday", 
-		"thursday", 
-		"friday", 
-		"saturday", 
-		"sunday"
+				"tuesday", 
+				"wednesday", 
+				"thursday", 
+				"friday", 
+				"saturday", 
+				"sunday"
                    ]
                 
                 ];
-
 foreach($array as $lang =>  $myarr)
 {
-
 foreach($array[$lang] as $day => $myarr2)
 {
   
@@ -34,5 +32,5 @@ foreach($array[$lang] as $day => $myarr2)
 } 
 echo 'Вы выбрали язык - ';
 if(isset($_GET['lang']) != '') { print_r ($_GET["lang"]); };
-echo 'Вы выбрали номер дня - ';
-if(isset($_GET['day']) != '') { print_r ($_GET["day"]); }?>
+echo ' Вы выбрали день - ';
+if(isset($_GET['day']) != '') { print_r ($array  [ $_GET["lang"] ] [$_GET["day"]]); }?>
